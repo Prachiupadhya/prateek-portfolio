@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -89,6 +92,32 @@ footer {
 
 .navbar a:hover {
   text-decoration: underline;
+}
+.dark {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.dark .navbar {
+  background-color: #000;
+}
+
+.dark a {
+  color: #90caf9;
+}
+
+.dark-toggle {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.dark-toggle:hover {
+  background-color: #444;
 }
 
 

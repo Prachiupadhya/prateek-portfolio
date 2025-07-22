@@ -7,7 +7,8 @@
 </head>
 <body>
 <nav class="navbar">
-  <ul>
+<button class="dark-toggle" onclick="toggleDarkMode()">🌓 Toggle Dark Mode</button>
+<ul>
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -23,12 +24,12 @@
     <a href="resume/Prateek_Parashar_Resume.pdf" download>📄 Download Resume</a>
   </header>
 
-  <section class="about">
+  <section id="about">
     <h2>About Me</h2>
     <p>Experienced and driven PPC Executive with over 7 years of experience in automotive production planning, manpower optimization, and process improvement. Skilled in KAIZEN, POKA YOKE, 5S, 7 QC Tools, and SAP (PP Module). Passionate about delivering results through systematic planning and lean production methods.</p>
   </section>
 
-  <section class="experience">
+  <section id="experience">
     <h2>Experience</h2>
 
     <h3>Sterling Tools Limited (May 2025 – Present)</h3>
@@ -53,14 +54,14 @@
     </ul>
   </section>
 
-  <section class="skills">
+  <section id="skills">
     <h2>Skills</h2>
     <p><strong>Production & Quality:</strong> 5S, 7 QC Tools, KAIZEN, 3M, 3G, FIFO, OEE</p>
     <p><strong>Software Tools:</strong> SAP (PP), Info LNUI (Oracle ERP), Power BI, MS Excel (Advanced), SQL</p>
     <p><strong>Soft Skills:</strong> Problem-solving, Teamwork, Quick Learner, Discipline</p>
   </section>
 
-  <section class="achievements">
+  <section id="achievements">
     <h2>Achievements</h2>
     <ul>
       <li>🏆 SGA Winner Team Leader – Sanden Vikas</li>
@@ -68,12 +69,17 @@
     </ul>
   </section>
 
-  <section class="contact">
+  <section id="contact">
     <h2>Contact</h2>
     <p>Email: prateek2000parashar@gmail.com</p>
     <p>Phone: +91-9466807516</p>
     <p>Location: Faridabad, Haryana</p>
   </section>
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+  }
+</script>
 
 </body>
 </html>
